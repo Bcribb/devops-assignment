@@ -5,17 +5,26 @@ package com.mycompany.app;
  */
 public class App
 {
-
-    private final String message = "Hello World!";
-
     public App() {}
 
     public static void main(String[] args) {
-        System.out.println(new App().getMessage());
+        System.out.println(new App().calculate(args));
     }
 
-    private final String getMessage() {
-        return message;
+    private final String calculate(String[] args) {
+		int first = Integer.parseInt(args[0]);
+		char operator = args[1].charAt(0);
+		int second = Integer.parseInt(args[2]);
+        switch(operator) {
+			case('+'):
+				system.out.println(first + second);
+				break;
+			case('-'):
+				system.out.println(first - second);
+				break;
+			default:
+				System.out.println("Incorrect entry");
+		}
     }
 
 }
