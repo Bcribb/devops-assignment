@@ -30,13 +30,24 @@ public class AppTest
     }
 
     @Test
-    public void testAppMain()
+    public void testAppAdd()
     {
         App.main(new String[]{"3", "+", "2"});
         try {
             assertEquals("5" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"Expected\" \"5\", receieved " + outContent.toString());
+        }
+    }
+	
+	@Test
+    public void testAppSub()
+    {
+        App.main(new String[]{"3", "-", "2"});
+        try {
+            assertEquals("1" + System.getProperty("line.separator"), outContent.toString());
+        } catch (AssertionError e) {
+            fail("\"Expected\" \"1\", receieved " + outContent.toString());
         }
     }
 
