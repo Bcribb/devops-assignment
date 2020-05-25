@@ -17,10 +17,10 @@ public class App
 		int second = Integer.parseInt(args[2]);
         switch(operator) {
 			case('+'):
-				system.out.println(first + second);
+				System.out.println(first + second);
 				break;
 			case('-'):
-				system.out.println(first - second);
+				System.out.println(first - second);
 				break;
 			default:
 				System.out.println("Incorrect entry");
