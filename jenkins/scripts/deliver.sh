@@ -17,4 +17,4 @@ set +x
 
 echo 'Runs the project and outputs it to the Maven UI'
 set -x
-java -jar target/${NAME}-${VERSION}.jar
+java -jar target/${NAME}-${VERSION}.jar 3 + 2
