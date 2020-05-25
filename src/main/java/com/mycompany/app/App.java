@@ -19,9 +19,9 @@ public class App
 			case('+'):
 				System.out.println(first + second);
 				break;
-			/* case('-'):
+			case('-'):
 				System.out.println(first - second);
-				break; */
+				break;
 			default:
 				System.out.println("Incorrect entry");
 		}
