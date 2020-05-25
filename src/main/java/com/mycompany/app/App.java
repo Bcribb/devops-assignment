@@ -8,10 +8,10 @@ public class App
     public App() {}
 
     public static void main(String[] args) {
-        System.out.println(new App().calculate(args));
+        new App().calculate(args);
     }
 
-    private final String calculate(String[] args) {
+    private final void calculate(String[] args) {
 		int first = Integer.parseInt(args[0]);
 		char operator = args[1].charAt(0);
 		int second = Integer.parseInt(args[2]);
